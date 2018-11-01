@@ -32,6 +32,12 @@ namespace RpgAppLab3
                 var randomIndex = rnd.Next(tolkienNames.Length);
                 Console.WriteLine(tolkienNames[randomIndex]);
             }
+            if (command == "80s action")
+            {
+                var actionNames = new[] { "Terminator", "Alien", "Leathal weapon" };
+                var randomIndex = rnd.Next(actionNames.Length);
+                Console.WriteLine(actionNames[randomIndex]);
+            }
             Console.ReadKey();
         }
     }
