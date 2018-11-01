@@ -20,13 +20,17 @@ namespace RpgAppLab3
             }
             if (command == "names")
             {
-<<<<<<< HEAD
-                var allNames = new[] { "Briana", "Ben", "David", "Dana", "Felicia", "Felix", "Legolas" };
-=======
+
                 var allNames = new[] { "Briana", "Ben", "David", "Dana", "Felicia", "Felix", "legolas", "Elrond"};
->>>>>>> elven-names
+
                 var randomIndex = rnd.Next(allNames.Length);
                 Console.WriteLine(allNames[randomIndex]);
+            }
+            if (command == "Tolkien names")
+            {
+                var tolkienNames = new[] { "legolas", "Elrond", "Frodo", "Aragaron", "Gandalf" };
+                var randomIndex = rnd.Next(tolkienNames.Length);
+                Console.WriteLine(tolkienNames[randomIndex]);
             }
             Console.ReadKey();
         }
