@@ -20,8 +20,10 @@ namespace RpgAppLab3
             }
             if (command == "names")
             {
-
+                
                 var allNames = new[] { "Ben", "David", "Dana",  "Felix", "legolas", "Elrond"};
+
+
 
                 var randomIndex = rnd.Next(allNames.Length);
                 Console.WriteLine(allNames[randomIndex]);
